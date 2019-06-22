@@ -55,3 +55,15 @@ let greeting = `Hello, my name is ${yourName}`;
   console.log(a * a === d); // note: the answer is a simple arithmetic equation, not something "weird"
   console.log(48 !== '48');
 
+// //Declare a variable animal. Set it to be either "cow" or something else.
+// Write code that will print out "mooooo" if the it is equal to cow.
+// Change your code so that if the variable animal is anything other than a cow, it will print "Hey! You're not a cow."
+
+let animal = "duck";
+
+if (animal == "cow") {
+	console.log("mooooo");
+} else {
+	console.log("Hey, you're not a cow");
+}
+
