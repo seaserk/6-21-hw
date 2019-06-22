@@ -67,3 +67,10 @@ if (animal == "cow") {
 	console.log("Hey, you're not a cow");
 }
 
+let age = 9;
+if (age >= 16) {
+	console.log("Here are your keys");
+} else {
+	console.log("sorry, you're too young");
+}
+
