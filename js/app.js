@@ -171,9 +171,24 @@ myArray.shift();
 myArray.pop();
 myArray.unshift("Bob Marley");
 myArray.splice(5);
+Array.prototype.reverse(myArray);
 console.log(myArray);
+//WHERE ARE EGON AND BUTTERS? Mutate means to change.  The reverse method doesnt appear to have done anything.
 
-//WHERE ARE EGON AND BUTTERS?
+
+//Biggie Smalls
+
+const rapper = 3;
+if (i < 100) {
+	console.log("little number"){
+
+	}
+	else {}
+		if (i>100) {
+			console.log("big number")
+		}
+	}
+
 
 
 
