@@ -119,6 +119,13 @@ for (let i=0; i<=100; i++) {
 }
 //WHY IS ZERO RETURNING A HIGH FIVE??? NEED HELP ALSO LOGGING BOTH 5 & 3
 
+//Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
+
+
+const  bank_account = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (const i = 0; i <= bank_account.length; i++) {
+	console.log[i];
+}
 
 
 
