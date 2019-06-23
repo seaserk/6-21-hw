@@ -176,20 +176,32 @@ console.log(myArray);
 //WHERE ARE EGON AND BUTTERS? Mutate means to change.  The reverse method doesnt appear to have done anything.
 
 
-//Biggie Smalls
+//Biggie Smalls. - WONT WORK
 
-const rapper = 3;
-if (i < 100) {
+// const rapper = 3;
+// if (i < 100) {
+// 	console.log("little number"){
+
+// 	}
+// 	else {}
+// 		(i>100) {
+// 			console.log("big number")
+// 		}
+// 	}
+
+if (i<5){
 	console.log("little number"){
-
-	}
-	else {}
-		if (i>100) {
-			console.log("big number")
+		else {
+			if (i>10) {
+				console.log("big number"){
+					else {
+						console.log("monkey")
+					}
+				}
+			}
 		}
 	}
-
-
+}
 
 
 
