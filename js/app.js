@@ -122,14 +122,39 @@ for (let i=0; i<=100; i++) {
 //Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
 
 
-const  bank_account = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-for (const i = 0; i <= bank_account.length; i++) {
-	console.log[i];
-}
+// const  bank_account = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// for (const i = 0; i <= bank_account.length; i++) {
+// 	console.log[i];
+// }
+
+// function sumAll(arr) {}
+//     var lower = Math.min(arr[0], arr[1]);
+//     var upper = Math.max(arr[0], arr[1]);
+
+//     var total = 0;
+
+//     for (var i = lower; i <= upper; i++) {
+//         total += i;
+//     }
 
 
 
+//MULTIPLES OF 3 and 5
 
+//Arrays & Control flow
+
+//The things inside an array are called ELEMENTS
+// No, arrays do not gurantee they will be in order
+// You could model test scores, game results, table contents
+
+// FIX. const quotes = ['''];
+
+const randomThings = [1, 10, "Hello", true]
+
+const first_element = randomThings[0];
+console.log(first_element);
+randomThings[2] = "World";
+console.log(randomThings);
 
 
 
