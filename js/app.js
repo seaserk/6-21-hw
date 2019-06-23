@@ -162,6 +162,19 @@ ourClass[4] = "Octocat";
 ourClass.push("Cloud City");
 console.log(ourClass);
 
+//Mix It Up
+
+const myArray = [5, 10, 500, 20]
+myArray.push("Egon");
+myArray.push("Butters");
+myArray.shift();
+myArray.pop();
+myArray.unshift("Bob Marley");
+myArray.splice(5);
+console.log(myArray);
+
+//WHERE ARE EGON AND BUTTERS?
+
 
 
 
