@@ -189,6 +189,8 @@ console.log(myArray);
 // 		}
 // 	}
 
+//MONKEY IN TH MIDDLE
+
 if (i<5){
 	console.log("little number"){
 		else {
@@ -202,6 +204,8 @@ if (i<5){
 		}
 	}
 }
+
+
 
 
 
