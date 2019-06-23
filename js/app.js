@@ -156,6 +156,13 @@ console.log(first_element);
 randomThings[2] = "World";
 console.log(randomThings);
 
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+//const ourClass = [0];  //saying that ourClass has already been declared?
+ourClass[4] = "Octocat";
+ourClass.push("Cloud City");
+console.log(ourClass);
+
+
 
 
 
