@@ -89,3 +89,43 @@ for (let i=10; i <=400; i++){
 for (let i=11; i<=4000; i+=3) {
 	console.log(i);
 }
+// Print out the numbers that are within the range of 1 - 100.
+
+// Adjust your code to add a message next to even numbers only that says: "<-- is an even number".
+
+for (let i=1; i <= 100; i++){
+	//console.log (i);
+  if (i%2 ===0) {
+  	console.log(`${i}<--- number is even`);
+  } else {
+  	console.log(i);
+  }
+} 
+
+//For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five.
+for (let i=0; i<=100; i++) {
+	if(i % 5===0){	
+		console.log(`I found a ${i}. High five!`);
+	} else {
+		if(i % 3 ===0){
+			console.log(`I found a ${i}. Three is a crowd`);
+		} else {
+			if(i % 5 === 0 && i % 3 === 0){
+				console.log(`I found a ${i}. High five!`) &&
+				console.log(`I found a ${i}. Three is a crowd`);
+			}
+		}
+	}
+}
+//WHY IS ZERO RETURNING A HIGH FIVE??? NEED HELP ALSO LOGGING BOTH 5 & 3
+
+
+
+
+
+
+
+
+
+
+
