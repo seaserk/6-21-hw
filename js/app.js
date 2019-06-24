@@ -353,12 +353,45 @@ function printLongestWord(arr){
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 }
 
+//transmorgrify
+
+// Write a Javascript function called transmogrify. 
+// This function should accept three arguments, which you can assume will be numbers. 
+// Your function should return the "transmogrified" result.
+// The transmogrified result of three numbers is the product of the first two numbers, 
+// raised to the power of the third number.
+
+function transmogrify(numbers){
+	const total =0;
+	for (const i = 0; i < numbers.length; i++){
+		const sqrt = Math.sqrt(numbers[i]);
+		total = total + sqrt;
+	}
+	return total;
+}
+console.log(transmogrify(5, 3, 2));
+
+//reverseWordOrder v2
+//write a function reverseWordOrder that accepts a single argument, a string. 
+// The function should return a string with the order of the words reversed.
+
+function reverseWordOrder(str){
+	return(str);
+}
+
 // k. Math Random
 
-math.floor(math.random() *10) +1 
+math.floor(math.random() *10) + 1 ;
 
-math.floor(math.random() * (100 - 10) + (10)
+math.floor(math.random() * (100 - 10) + (10);
 
+math.floor(math.random() * 532) + 13267;
+
+// //Write a function that will return a random number between 1 and 10. Test it.
+// Add a few more quotes to the quotes array from question III-B-1 above. 
+// Write a function that will take an array as a parameter, and 
+// return a random element from that array. Call your function
+//  a few times, passing in the quotes array. Give it a nice semantic name like getRandomElement.
 
 
 Objects
