@@ -394,9 +394,8 @@ math.floor(math.random() * 532) + 13267;
 //  a few times, passing in the quotes array. Give it a nice semantic name like getRandomElement.
 
 
-Objects
+//Objects
 
-//
 let user = {
 	name: 'Rick Ross',
 	email: 'thaboss@worldwide.com',
@@ -407,7 +406,25 @@ user.email = 'thaboss@aol.com';
 user.age++;
 user.location = 'Miami';
 
+//shopaholic!
 
+purchased.push('carbohydrates');
+purchased.push('peace of mind');
+purchased.push('Merino jodhpurs');
+
+//object within object
+user.friend = {
+    name: "Dwayne Johnson",
+    age: 44,
+    location: "Los Angeles",
+    purchased: []
+}
+console.log(friend.name);
+console.log(friend.location);
+friend.age = 55;
+purchased.push('The One Ring');
+purchased.push('A latte');
+console.log(purchased[1]);
 
 
 
