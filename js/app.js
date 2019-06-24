@@ -103,29 +103,48 @@ for (let i=1; i <= 100; i++){
 } 
 
 //For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five.
-for (let i=0; i<=100; i++) {
-	if(i % 5===0){	
-		console.log(`I found a ${i}. High five!`);
-	} else {
-		if(i % 3 ===0){
-			console.log(`I found a ${i}. Three is a crowd`);
-		} else {
-			if(i % 5 === 0 && i % 3 === 0){
-				console.log(`I found a ${i}. High five!`) &&
-				console.log(`I found a ${i}. Three is a crowd`);
-			}
-		}
+// for (let i=0; i<=100; i++) {
+// 	if(i % 5===0){	
+// 		console.log(`I found a ${i}. High five!`);
+// 	} else {
+// 		if(i % 3 ===0){
+// 			console.log(`I found a ${i}. Three is a crowd`);
+// 		} else {
+// 			if(i % 5 === 0 && i % 3 === 0){
+// 				console.log(`I found a ${i}. High five!` &&  console.log(`I found a ${i}. Three is a crowd`);
+// 			}
+// 		}
+// 	}
+// }
+
+for(let i=0; i<100; i++){
+	let statement = `I found an ${i}`;
+	if (i % 5 === 0) {
+		statement += 'High five';
 	}
+	if (i % 3 === 0){
+		statement += 'Three is a crowd';
+	}
+	console.log(statement)
 }
-//WHY IS ZERO RETURNING A HIGH FIVE??? NEED HELP ALSO LOGGING BOTH 5 & 3
 
 //Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
 
 
-// const  bank_account = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// for (const i = 0; i <= bank_account.length; i++) {
-// 	console.log[i];
-// }
+let bank_account = 0;
+for (let i = 1; i<=10; i++){
+	bank_account += i;
+
+}
+console.log(bank_account);
+// You got a bonus! Your pay is now doubled each week.
+//  Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
+
+bank_account = 0;
+for (let i = 1; i <=100; i++){
+	bank_account += i*2;
+}
+console.log(bank_account);
 
 // function sumAll(arr) {}
 //     var lower = Math.min(arr[0], arr[1]);
@@ -140,14 +159,20 @@ for (let i=0; i<=100; i++) {
 
 
 //MULTIPLES OF 3 and 5
-
+let sum = 0;
+for (let i = 1; i <=1000; i++){
+	if (i %3 ===0 || i % 5 === 0){
+		sum += i;
+	}
+}
+console.log(sum);
 //Arrays & Control flow
 
 //The things inside an array are called ELEMENTS
 // No, arrays do not gurantee they will be in order
 // You could model test scores, game results, table contents
 
-// FIX. const quotes = ['''];
+const quotes = ["Hola amigo", "Your name", "Tom Green"];
 
 const randomThings = [1, 10, "Hello", true]
 
@@ -157,7 +182,6 @@ randomThings[2] = "World";
 console.log(randomThings);
 
 const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
-//const ourClass = [0];  //saying that ourClass has already been declared?
 ourClass[4] = "Octocat";
 ourClass.push("Cloud City");
 console.log(ourClass);
@@ -170,96 +194,210 @@ myArray.push("Butters");
 myArray.shift();
 myArray.pop();
 myArray.unshift("Bob Marley");
-myArray.splice(5);
+myArray.splice(4);
 Array.prototype.reverse(myArray);
 console.log(myArray);
-//WHERE ARE EGON AND BUTTERS? Mutate means to change.  The reverse method doesnt appear to have done anything.
+//Mutate means to change.  The reverse method doesnt appear to have done anything.
 
 
 //Biggie Smalls. - WONT WORK
 
-// const rapper = 3;
-// if (i < 100) {
-// 	console.log("little number"){
-
-// 	}
-// 	else {}
-// 		(i>100) {
-// 			console.log("big number")
-// 		}
-// 	}
+const rapper = 3;
+if (rapper < 100) {
+	console.log("little number");
+}
+else {
+	console.log("big number");
+}
 
 //MONKEY IN TH MIDDLE -- HELP WITH SYNTAX
 
+const myNumber = 6;
+if (myNumber<5){
+	console.log("little number")
+} else if (myNumber>10) {
+	console.log("big number")
+} else {
+	console.log("monkey")
+}
 
-// if (i<5){
-// 	console.log("little number"){
-// 		else {
-// 			if (i>10) {
-// 				console.log("big number"){
-// 					else {
-// 						console.log("monkey")
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+
 
 
 //WHAT"S IN YOUR CLOSET?
 
-// const kristynsCloset = [
-//   "left shoe",
-//   "cowboy boots",
-//   "right sock",
-//   "GA hoodie",
-//   "green pants",
-//   "yellow knit hat",
-//   "marshmallow peeps"
-// ];
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
 
-// // Thom's closet is more complicated. Check out this nested data structure!!
-// const thomsCloset = [
-//   [
-//     // These are Thom's shirts
-//     "grey button-up",
-//     "dark grey button-up",
-//     "light blue button-up",
-//     "blue button-up",
-//   ],[
-//     // These are Thom's pants
-//     "grey jeans",
-//     "jeans",
-//     "PJs"
-//   ],[
-//     // Thom's accessories
-//     "wool mittens",
-//     "wool scarf",
-//     "raybans"
-//   ]
-// ];
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
 
 // What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
-
+const kristensClothes = `Kristyn is rocking that ${kristynsCloset[2]} today!`;
+console.log(kristensClothes);
 // Kristyn just bought some sweet shades! Add "raybans" to her closet after "yellow knit hat".
-
+kristynsCloset.splice(6, 0, 'raybans');
+console.log(kristynsCloset);
 // Kristyn spilled coffee on her hat... modify this item to read "stained knit hat" instead of yellow.
-
+kristynsCloset[5] = "Stained knit hat";
+console.log(kristynsCloset);
 // Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirts array.
-
+thomsCloset[0];
 // In the same way, access one item from Thom's pants array.
 
 // Access one item from Thom's accessories array.
 
 // Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
 
-// Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
+// Get more specific about what kind of PJs Thom's wearing this winter. 
+// Modify the name of his PJ pants to Footie Pajamas.
 
 
+function printGreeting(name){
+	return(`Hello ${name}`);
+}
+console.log(printGreeting("Slimer"));
 
-//console.log(printGreeting("Slimer"));
+//printCool
 
-function printCool(${name} `is cool`))
+function printCool(`${name} is cool`){
+
+ }
 console.log(printCool("Captain Ron"));
+
+// //calculateCube
+function calculateCube(number){
+	return(number*number*number);
+}
+console.log(calculateCube(4));
+
+// // // isVowel
+// // Write a function isVowel that takes a character (i.e. a string of length 1) and returns true if 
+// // it is a vowel, false otherwise. The vowel could be upper or lower case. 
+// // Test your function on every vowel and make sure it's working. In general, when you write functions, 
+function isVowel(str){
+	if (str == 'a' || str == 'e' || str == 'i' || str == 'o' || str == 'u'){
+		return(true);
+	} else {
+		return(false);
+	}
+}
+console.log(isVowel("k"));
+
+// //getTwoLengths
+// //Write a function getTwoLengths that accepts two parameters (strings). The function should return an array of numbers 
+// //where each number is the length of the corresponding string.
+
+function getTwoLengths(str1, str2){
+	return[]{
+
+	}
+console.log(getTwoLengths("Hank", "Hippopalous"));
+
+// //getMultipleLengths
+// // Write a function getMultipleLengths that accepts a single parameter as an argument: 
+// //an array of strings. The function should return an array of numbers where each 
+// //number is the length of the corresponding string.
+// // 
+function getMultipleLengths = ['string1', 'string2', 'string3', 'string4', 'string5'];
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
+// //maxOfThree
+// // Define a function maxOfThree that takes three numbers as arguments and returns the largest of them. 
+//If all numbers are the same, it doesn't matter which one is returned. 
+//If the two largest numbers are the same, one of them should be returned. 
+//Be sure to test it with larger values in each of the three locations.
+
+function maxOfThree(num1, num2, num3){
+	Math.max(num1, num2, num3)
+}
+console.log(maxOfThree (30, 21, 8))
+//printLongestWord
+//Write a function printLongestWord that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie,
+// the method should return the word that appears first in the array.
+
+function printLongestWord(arr){
+	let word = "";
+	for (let i = 0; i < arr.length; i++){
+		if (word.length < arr[i].length) {
+
+		}
+	}
+	return word;
+}
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+}
+
+// k. Math Random
+
+math.floor(math.random() *10) +1 
+
+math.floor(math.random() * (100 - 10) + (10)
+
+
+
+Objects
+
+//
+let user = {
+	name: 'Rick Ross',
+	email: 'thaboss@worldwide.com',
+	age: 40,
+	purchased: []
+};
+user.email = 'thaboss@aol.com';
+user.age++;
+user.location = 'Miami';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	;
 
